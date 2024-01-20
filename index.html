@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                screens: {
+                    'mm': '1532px',
+                    'smm': '1022px'
+                },
+                fontFamily: {
+                    sans:['Poppins','Robot','Helvetica', 'Arial', 'sans-serif']
+                },
+              colors: {
+                purple: '#8053FF',
+                semiBlack: '#333333',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-black">
+    <div class="container mx-w-md mx-auto min-h-screen flex items-center justify-center">
+        <div class="rounded-3xl shadow-lg md:flex bg-white ">
+
+            <div class="hidden lg:block ">
+                <img src="img/Rectangle.svg" alt="Alexandr Popadin" width="984" class="rounded-l-3xl object-cover md:h-full md:object-center">
+            </div>
+
+            <div class="w-[456px] h-[800px]">
+                <div class="container mx-w-md mx-auto p-12">  
+                    <img src="img/Logo.svg" alt="logo" height="68" class="hidden lg:block md:hidden">
+        
+                    <form action="#">
+
+                        <h1 class="pt-5 lg:pt-10 pb-4 font-semibold text-xl text-slate-800">Nice to see you again</h1>
+
+                        <div class="hidden lg:block sm:hidden px-4 pb-2 text-xs">Login</div>
+                        <input type="text" placeholder="Email or phone number" class="bg-gray-100 w-full border rounded py-2 px-4 text-sm">
+
+                        <div class="hidden lg:block sm:hidden px-4 pt-4 pb-2 text-xs">Password</div>
+                        <input type="password" placeholder="Enter Password" class="mt-4 lg:mt-0 bg-gray-100 w-full border rounded py-2 px-4 text-sm">
+
+                        <div class="text-right text-xs text-blue-600 pt-3 pb-10"><a href="#">Forgot Password?</a></div>
+                        <input type="submit" value="Sign in" class="border w-full bg-purple text-white rounded-lg py-2 cursor-pointer text-slate-100 font-medium">
+
+                        <div class="border w-full bg-semiBlack text-white text-xs rounded-lg py-2 mt-20 mb-5 ">
+                            <a href="#" class="flex items-center justify-center "><img src="img/google.svg" alt="logo" class="pr-2">
+                                Or sign in with Google
+                            </a>
+                        </div>
+                            <p class="text-center text-xs">Dont have an account? <a href="#" class="text-blue-600 tracking-wider">Sign up now</a></p>
+
+                            <img src="img/Logo.svg" alt="logo" height="68" class=" lg:hidden mx-auto mt-10">
+                    </form>
+                    <p class="mt-12 smm:mt-[100px] mm:mt-[200px] text-center text-xs text-slate-600">&copy; Perfect Login 2021</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
